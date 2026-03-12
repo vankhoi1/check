@@ -1,5 +1,4 @@
 let mongoose = require('mongoose');
-const categories = require('./categories');
 
 let productSchema = mongoose.Schema({
     title: {
@@ -18,7 +17,7 @@ let productSchema = mongoose.Schema({
     description: {
         type: String,
         default: true,
-        maxLength: 255
+        maxLength: 999
     },
     category: {
         type: mongoose.Types.ObjectId,

@@ -1,8 +1,6 @@
 var express = require('express');
 var router = express.Router();
 let slugify = require('slugify');
-let { dataCategories, dataProducts } = require('../utils/data')
-let { GenID } = require('../utils/idHandler')
 let categoryModel = require('../schemas/categories')
 
 /* GET users listing. */
